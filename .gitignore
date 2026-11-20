@@ -1,0 +1,29 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv/
+env/
+build/
+dist/
+
+# Workspace & Caches (Keep intermediate assets local)
+workspace/input/*
+!workspace/input/.gitkeep
+workspace/intermediate/*
+!workspace/intermediate/.gitkeep
+workspace/output/*
+!workspace/output/.gitkeep
+
+# Media generation temp files
+media/
+*.mp4
+*.wav
+*.png
+*.svg
+
+# System & OS
+.DS_Store
+Thumbs.db
+*.log
