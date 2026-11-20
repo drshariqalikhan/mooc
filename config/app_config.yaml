@@ -1,0 +1,30 @@
+﻿system:
+  gpu_device: 0
+  vram_limit_gb: 11.0
+  sequential_execution: true
+
+models:
+  ollama:
+    base_url: "http://localhost:11434"
+    default_model: "gemma4:e4b"
+    auto_discover: true
+    context_window: 8192
+    auto_unload_vram: true
+  tts:
+    engine: "f5-tts"
+    conda_env: "f5tts"
+    sample_rate: 24000
+    reference_voice_path: "assets/reference_voice.wav"
+
+video:
+  resolution: [1920, 1080]
+  fps: 30
+  manim_quality: "high_quality"
+  renderer: "cairo"
+  ffmpeg_codec: "h264_nvenc"
+  ffmpeg_preset: "p6"
+
+paths:
+  workspace_input: "workspace/input"
+  workspace_intermediate: "workspace/intermediate"
+  workspace_output: "workspace/output"
